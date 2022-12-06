@@ -1,4 +1,3 @@
-//import * as d3 from "https://cdn.skypack.dev/d3";
 import { d3 } from "https://code4fukui.github.io/d3-es/d3.min.js";
 import { CSV } from "https://js.sabae.cc/CSV.js";
 
