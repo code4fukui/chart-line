@@ -66,7 +66,8 @@ class ChartLine extends HTMLElement {
     svg.attr("width", width).attr("height", height);
     
     //const color = d3.scaleSequential((t) => d3.hsl(t / 12 * 360, 1, .6));
-    const min = this.getAttribute("useMinValue") ? d3.min(dataset, d => parseFloat(d.value)) : 0;
+    const minv = this.getAttribute("minValue");
+    const min = minv ? parseFloat(minv) : this.getAttribute("useMinValue") ? d3.min(dataset, d => parseFloat(d.value)) : 0;
     const xScale = d3.scaleBand()
       .rangeRound([padding, width])
       .padding(1)
