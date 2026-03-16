@@ -36,4 +36,4 @@ Alternatively, you can load the data from an external CSV file:
 This project uses the [D3.js](https://d3js.org/) library for data visualization and the [CSV.js](https://js.sabae.cc/CSV.js) library for parsing CSV data.
 
 ## License
-This project is licensed under the [MIT License](LICENSE).
+MIT License — see [LICENSE](LICENSE).
