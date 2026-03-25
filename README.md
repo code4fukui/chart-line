@@ -1,38 +1,35 @@
 # chart-line
-日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
 
-A web component that creates a line chart from CSV data.
+A Web/Code project by [Code for FUKUI](https://github.com/code4fukui).
 
-## Demo
-[https://code4fukui.github.io/chart-line/](https://code4fukui.github.io/chart-line/)
+**Live demo**: https://code4fukui.github.io/chart-line/
 
 ## Features
-- Supports single or multiple line datasets
-- Responsive design that scales to the container size
-- Customizable with attributes for minimum value, color, etc.
-- Can load data from inline text or external CSV file
 
-## Usage
-To use the `<chart-line>` element, include the `chart-line.js` file and add the element to your HTML:
+- Data visualization
+- CSV data parsing
 
-```html
-<script type="module" src="./chart-line.js"></script>
-<chart-line>
-  name,value
-  A,30
-  B,20
-  C,70
-</chart-line>
-```
+## Technology Stack
 
-Alternatively, you can load the data from an external CSV file:
+**Browser modules (ES imports):**
 
-```html
-<chart-line src="https://example.com/data.csv"></chart-line>
-```
+- [`d3.min.js`](https://code4fukui.github.io/d3-es/d3.min.js)
+- [`CSV.js`](https://js.sabae.cc/CSV.js)
 
-## Data / API
-This project uses the [D3.js](https://d3js.org/) library for data visualization and the [CSV.js](https://js.sabae.cc/CSV.js) library for parsing CSV data.
+
+## Installation & Setup
+
+No build step required. Clone the repository and open `index.html` in a browser,
+or visit the live demo at https://code4fukui.github.io/chart-line/
+
+## Data Sources
+
+- DATA: CC BY data_go_jp_format.csv data.go.jp データカタログサイト統計データ
+
+## Contributing
+
+Contributions are welcome. Please open an issue or pull request on GitHub.
 
 ## License
-This project is licensed under the [MIT License](LICENSE).
+
+MIT License. See [LICENSE](./LICENSE) for details.
